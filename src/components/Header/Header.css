@@ -1,0 +1,53 @@
+header {
+  padding: 2rem;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 3%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.theme button {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--highlight);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/******************************************
+/* Mobile
+/*******************************************/
+@media screen and (max-width: 579px) and (min-height: 579px) {
+  .logo {
+    width: 10%;
+  }
+}
+
+/******************************************
+/* Tablet
+/*******************************************/
+@media (min-width: 580px) and (max-width: 850px) {
+  .logo {
+    width: 6%;
+  }
+}
+
+/******************************************
+/* Small PC
+/*******************************************/
+@media (min-width: 851px) and (max-width: 1024px) {
+  .logo {
+    width: 5%;
+  }
+}

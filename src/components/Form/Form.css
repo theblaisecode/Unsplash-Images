@@ -1,0 +1,105 @@
+section.form .formContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 4rem 4rem 4rem;
+  gap: 4rem;
+}
+
+section.form h1 {
+  font-size: 5rem;
+  line-height: 7rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+form {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  width: 100%;
+  background: none;
+  outline: none;
+  padding: 1rem 1.2rem;
+  border: 0.1rem solid var(--accent);
+  border-right: none;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+form input::placeholder {
+  font-style: italic;
+}
+
+form button {
+  cursor: pointer;
+  background: var(--highlight);
+  color: var(--light);
+  padding: 1.1rem 2rem;
+  outline: none;
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+/******************************************
+/* Mobile
+/*******************************************/
+@media screen and (max-width: 579px) and (min-height: 579px) {
+  section.form .formContent {
+    padding: 0 2rem 2rem 2rem;
+    gap: 2rem;
+  }
+
+  section.form h1 {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  form button {
+    padding: 1.1rem 1.5rem;
+  }
+}
+
+/******************************************
+/* Tablet
+/*******************************************/
+@media (min-width: 580px) and (max-width: 850px) {
+  section.form .formContent {
+    padding: 0 2rem 2rem 2rem;
+    gap: 2rem;
+  }
+
+  section.form h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  form {
+    width: 70%;
+  }
+}
+
+/******************************************
+/* Small PC
+/*******************************************/
+@media (min-width: 851px) and (max-width: 1024px) {
+  section.form h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  form {
+    width: 70%;
+  }
+}
